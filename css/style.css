@@ -1,23 +1,66 @@
-.H1{
-    font-family: AppleSystemUIFont;
+
+
+H1{
+    font-family: "American Typewriter";
 }
 
-.header{
+#header{
     background-color: cadetblue;
-    height: 10em;
+    border: .2em solid darkgrey;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10em;
-    border: 3px solid green;
+    height: 15vh;
 }
 
-.navbar{
+#navigation{
     background-color: mediumpurple;
-    height: available;
+    border: .2em solid darkgrey;
+    padding-left: 1em;
+    padding-top: 1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    flex: 1 1;
+}
+
+#content{
+    background-color: bisque;
+    border: .2em solid darkgrey;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10em;
-    border: 3px solid green;
+    flex: 4 1;
+}
+
+#sidebar{
+    background-color: coral;
+    border: .2em solid darkgrey;
+    padding-top: 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 1;
+}
+
+#wrap{
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+}
+
+#footer{
+    background-color: cadetblue;
+    height: 15vh;
+    border: .2em solid darkgrey;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
 }
