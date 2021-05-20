@@ -3,29 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <link href="../css/style.css" rel="stylesheet">
+    <script src="../js/lernprogramm.js"></script>
     <title>Aufgaben</title>
 </head>
+
 <body>
   <div id="header">
+    <img width="51px" height="51px" src="../img/whiteboard.png">
     <h1>Willkommen bei Tutorialino</h1>
   </div>
+
   <div id="wrap">
     <div id="navigation">
       <button><a href="../index.html">Home</a></button>
-      <button><a href="tasks.html">Aufgaben</a></button>
+      <button><a href="tasks.html" onclick="startGame()">Aufgaben</a></button>
       <button><a href="contact.html">Kontakt</a></button>
     </div>
+
     <div id="content">
+      <p id="question">Hier kommt eine Frage?</p>
+      <div>
+        <button id="1">Valencia</button>
+        <button id="2">Madrid</button>
+        <button id="3">Barcelona</button>
+        <button id="4">Palma</button>
+      </div>
+    </div>
+
+    <div id="sidebar">
       Lernfortschritt
     </div>
-    <div id="sidebar">
-      Online
-      <br></br>
-      jou
-    </div>
   </div>
+
   <div id="footer">
-    Das ist der Footer
+    Copyright Tim Grünert
   </div>
+
+  <script>
+    startGame();
+  </script>
+
 </body>
 </html>
