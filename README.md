@@ -27,6 +27,11 @@ Fehlermeldung:
 
 Aus diesem Grund baut die Funktion für die Fragen vom Server die Antwort-Buttons dynamisch auf im Gegensatz zu der Funktion für die lokal gespeicherten Fragen.
 
+## Vorschläge zur Verbesserung
+
+* weitere Syntaxhinweise für die curl-Befehle für Aufgaben mit mehreren richtigen Antworten
+* Anlegen von Benutzer-Accounts zur Speicherung von Lernständen
+
 ## Quellen
 
 * https://colorhunt.co/palette/179373; 20.05.2021; 14:17 Uhr
