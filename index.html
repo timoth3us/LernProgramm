@@ -2,35 +2,45 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>LernProgramm</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="images/innovation.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+    <meta name="theme-color" content="#db4938" />
 </head>
 <body>
-    <div id="header">
-        <img width="51px" height="51px" src="img/whiteboard.png">
-        <h1>Willkommen bei Tutorialino</h1>
-    </div>
+    <header>
+        <img width="51px" height="51px" src="img/icon.svg"  alt="Logo Glühbirne">
+        <h1>Tutorio</h1>
+    </header>
     <div id="wrap">
-        <div id="navigation">
-            <button><a href="index.html">Home</a></button>
-            <button><a href="commons/tasks.html">Aufgaben</a></button>
-            <button><a href="commons/contact.html">Kontakt</a></button>
-        </div>
-        <div id="content">
-            Home
-            <br>
-            <br>
-            Auf dieser Seite kannst du dein Wissen rund um die Themen Mathematik, Internettechnologien und dein Allgemeinwissen testen.
-            <br>
-            Wähle einfach links im Dropdown Menü das gewünschte Themengebiet aus und lege los.
-        </div>
-        <div id="sidebar">
-
-        </div>
+        <nav>
+            <a href='index.html'>Home</a>
+            <a href='commons/tasks.html'>Aufgaben</a>
+            <a href='commons/contact.html'>Kontakt</a>
+        </nav>
+        <main>
+            <p>Willkommen bei Tutorio!</p>
+            <p>Auf dieser Seite kannst du dein Wissen rund um die Themen Mathematik, Internettechnologien
+                und dein Allgemeinwissen testen.</p>
+            <p>Unter Community Fragen findest du von anderen Usern erstellte Aufgaben.</p>
+            <p>Wähle einfach unter Aufgaben das gewünschte Themengebiet aus und lege los.</p>
+        </main>
     </div>
-    <div id="footer">
-        Copyright Tim Grünert
-    </div>
-
+    <footer>
+        <p id="copyright">Copyright Tim Grünert</p>
+    </footer>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(reg => console.log(reg))
+                .catch(err => console.log(err));
+        }
+    </script>
 </body>
 </html>

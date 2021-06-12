@@ -1,0 +1,16 @@
+{
+ "short_name": "Tutorio",
+ "name": "Tutorio",
+ "start_url": ".",
+ "background_color": "#565656",
+ "theme_color": "#db4938",
+ "display": "standalone",
+ "orientation": "portrait-primary",
+ "icons": [
+     {
+       "src": "img/innovation.png",
+       "sizes": "472x472",
+       "type": "image/png"
+     }
+   ]
+}
